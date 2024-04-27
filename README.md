@@ -20,7 +20,9 @@ ABOUT
 
 This is a multi-page dashboard application created using Dash for Python for visualizing X. There are two types of visualizations:
 1) User Analysis - Given the X username, various visualizations related to the user are displayed in separate tabs
-2) Trend Analysis - Given the country and city, the trending topics in the city have been visualized 
+2) Trend Analysis - Given the country and city, the trending topics in the city have been visualized
+
+Git Link: https://github.com/hridaykondru/X-Analysis-Dashboard/
 
 RUNNING INSTRUCTIONS
 ---------------------------
