@@ -28,7 +28,7 @@ app.layout = dbc.Container(
                             dbc.NavItem(
                                 dbc.NavLink(f"{page['name']}", href=page["relative_path"], active=False, className="nav-link")
                             )
-                            for page in dash.page_registry.values()
+                            for page in dash.page_registry.values() if page["relative_path"] != "/"
                         ],
                         pills=True,
                         className="flex-column"                        
@@ -38,7 +38,7 @@ app.layout = dbc.Container(
                 style={'padding-top': '20px', 'border-right': '1px solid #c8c8c8', 'height': '100vh', 'background-color': '#f8f9fa'}
                 ),
                 dbc.Col(
-                    dash.page_container
+                    dash.page_container 
                 )
             ]
         )
